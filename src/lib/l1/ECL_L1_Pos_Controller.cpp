@@ -258,8 +258,8 @@ ECL_L1_Pos_Controller::navigate_loiter(const Vector2d &vector_A, const Vector2d 
 	/* for PD control: Calculate radial position and velocity errors */
 
 	/* radial velocity error */
-	float xtrack_vel_circle = -ltrack_vel_center;
-	/* radial distance from the loiter circle (not center) */
+	float xtrack_vel_circle = -ltrack_vel_center; 
+	/* radial distance from the loiter circle (not center) */   // this is error calulation
 	float xtrack_err_circle = vector_A_to_airplane.length() - radius;
 
 	/* cross track error for feedback */
